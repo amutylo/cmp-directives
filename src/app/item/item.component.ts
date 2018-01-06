@@ -5,7 +5,8 @@ import { StarWarsService } from '../star-wars.service';
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
-  styleUrls: ['./item.component.css']
+  styleUrls: ['./item.component.css'],
+  providers: [StarWarsService]
 })
 export class ItemComponent implements OnInit {
   @Input() character;
